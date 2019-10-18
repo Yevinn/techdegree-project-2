@@ -6,6 +6,7 @@ body{
 }
 img{
   max-width: 100%;
+  border-radius: 5px;
 }
 header,
 nav{
@@ -56,9 +57,7 @@ nav a:last-child{
   margin: 0 auto;
   
 }
-main{
-  
-}
+
 #about{
   font-size: 20px;
   text-align: center;
@@ -75,7 +74,18 @@ main{
   font-size: 20px;
   margin-bottom: 70px;
 }
-
+.row{
+  display: flex;
+  margin: 15px;
+  flex-direction: column;
+}
+.skills,
+.software{
+  background: #ddd;
+  margin: 15px;
+  padding: 50px;
+  border-radius: 5px;
+}
 #contact{
   background-color: #fafafa;
   padding: 50px 15px;
@@ -88,19 +98,20 @@ main{
   display: table;
 }
 footer{
-  background-color: #fafafa;
+  background-color: #4a4a4a;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
-  border-top: 1px solid #ddd
+  border-top: 1px solid #fff;
+  color: #fff;
 }
 footer ul{
   display: none;
 }
 #to-top{
-  color: #4A4A4A;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
 }
@@ -109,17 +120,20 @@ a#to-top{
 }
 footer a{
   text-decoration: none;
-  color: #4A4A4A;
+  color: #fff;
   font-weight: bold;
 }
 footer a:hover{
   color: #157EFA;
 }
+footer p{
+  font-family: 'Indie Flower', cursive;
+}
 
 
 /* Media Queries */
 
-@media (min-width: 769px){
+@media (min-width: 768px){
   header{
     height: 200px;
     justify-content: flex-end;
@@ -158,6 +172,10 @@ footer a:hover{
     max-width: 45%;
     padding: 1rem;
   }
+  .row{
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
   #intro-contact{
     margin: 0 5rem;
   }
@@ -173,7 +191,7 @@ footer a:hover{
   }
 }
 
-@media (min-width: 1025px){
+@media (min-width: 1024px){
   header{
     flex-direction: row;
     padding: 0 60px;
@@ -203,7 +221,10 @@ footer a:hover{
       padding: 35px 60px;
   }
   #about {
-    width: 70%;
+    width: 55%;
+  }
+  .row{
+    margin: 15px 50px 50px;
   }
   footer ul li{
     display: inline-block;
