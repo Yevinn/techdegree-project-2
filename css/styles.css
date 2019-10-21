@@ -15,7 +15,11 @@ nav{
 }
 header{
   text-align: center;
-  background-color: #fafafa;
+  background: #4A4A4A;
+  color: #fff;
+}
+h1{
+  font-family: 'Indie Flower', cursive;
 }
 h2{
   font-size: 18px;
@@ -27,6 +31,7 @@ h3{
 nav{
   margin-top: 1.5rem;
   font-weight: bold;
+  
 }
 nav a{
   display: block;
@@ -41,7 +46,7 @@ nav a{
   text-decoration: none;
 }
 nav a:hover{
-  color: #0b0b0b;
+  color: #127EF7;
 }
 
 nav a:last-child{
@@ -145,6 +150,7 @@ footer p{
   }
   nav a{
     background-color: transparent;
+    color: #fff;
     
   }
   nav a:last-child{
