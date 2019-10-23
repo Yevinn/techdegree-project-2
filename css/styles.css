@@ -54,8 +54,8 @@ nav a:last-child{
 }
 
 #home{
-  background-color: #fafafa;
-  padding: 35px 15px;
+  background: linear-gradient(#fff, #F6F6F6);
+  padding: 50px 15px;
 }
 #bio{
   display: block;
@@ -70,6 +70,7 @@ nav a:last-child{
 #portfolio{
   text-align: center;
   padding: 0 15px;
+  background: linear-gradient(#fff, #F6F6F6);
 }
 #portfolio h2{
   margin: 85px 0;
@@ -86,10 +87,11 @@ nav a:last-child{
 }
 .skills,
 .software{
-  background: #ddd;
+  background: #157EFA;
   margin: 15px;
   padding: 50px;
   border-radius: 5px;
+  color: #fff;
 }
 #contact{
   background-color: #fafafa;
